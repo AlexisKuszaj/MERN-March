@@ -6,22 +6,30 @@ const HookForm = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  
 
+const [firstName, setFirstName] = useState ({
+
+})
+
+const changeHandler - (event) => {
+    console.log(e.target)
+}
+{
   return (
     <form>
-      <label>
-        First Name:
+      <label> First Name: </label>
         <input
           type="Text"
           name={firstName}
           onChange={(e) => setFirstName(e.target.value)}
-        />
-        {
-        firstName.length < 3 ?
-          <p>Field must be at least 2 characters</p>:
+        /> {
+          firstName.firstName.length < 3?
+          <p>Must be 2 or more characters</p>:
           null
+
         }
-      </label>
+     
       <label>
         Last Name:
         <input
@@ -29,11 +37,6 @@ const HookForm = (props) => {
           Name={lastName}
           onChange={(e) => setLastName(e.target.value)}
         />
-        {
-        lastName.length < 3 ?
-          <p>Field must be at least 2 characters</p>:
-          null
-        }
       </label>
       <label>
         Email:
@@ -42,11 +45,6 @@ const HookForm = (props) => {
           name={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        {
-        email.length < 5 ?
-          <p>Field must be at least 5 characters</p>:
-          null
-        }
       </label>
       <label>
         Password:
@@ -55,11 +53,6 @@ const HookForm = (props) => {
           name={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        {
-        password.length < 8 ?
-          <p>Passwords must match and be at least 8 characters</p>:
-          null
-        }
       </label>
       <label>
         Confirm Password
@@ -68,11 +61,6 @@ const HookForm = (props) => {
           name={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
-        {
-        confirmPassword.length < 8 ?
-          <p>Passwords must match and be at least 8 characters</p>:
-          null
-        }
       </label>
       <div>
         <p>Form</p>
