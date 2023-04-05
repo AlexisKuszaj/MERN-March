@@ -31,7 +31,7 @@ const HookForm = (props) => {
         />
         {
         lastName.length < 3 ?
-          <p>Field must be at least 2 characters</p>:
+          <p>Field must be at least 3 characters</p>:
           null
         }
       </label>

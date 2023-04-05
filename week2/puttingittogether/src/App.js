@@ -2,8 +2,6 @@ import Names from './components/Names';
 import './App.css';
 import React, { useState } from 'react';
 
-// let age = 26;
-
 
 function App()
 {
