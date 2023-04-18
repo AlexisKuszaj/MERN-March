@@ -1,0 +1,59 @@
+.App {
+display: flex;
+flex-direction: column;
+padding: 20px;
+}
+.addbtn {
+  width: 25%;
+}
+.editbtn {
+  width: 25%;
+}
+
+form{
+  display:flex ;
+  flex-direction: row;
+  text-align: center;
+}
+
+.addPetLink {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+.home {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+thead {
+  background-color: lightgrey;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
