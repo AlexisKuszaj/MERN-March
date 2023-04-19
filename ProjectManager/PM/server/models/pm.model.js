@@ -5,7 +5,7 @@ const PM = new mongoose.Schema({
         type: String
     },
     price: {
-        type: Number
+        type: String
     },
     description: {
         type:String
