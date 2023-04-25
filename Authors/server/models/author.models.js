@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
  
-const person = new mongoose.Schema({
+const Person = new mongoose.Schema({
     author: {
         type: String
     }
    
 },{timestamps:true});
 
-const author = mongoose.model('author', person);
+const Writer = mongoose.model('Writer', Person);
 
-module.exports = author;
+module.exports = Writer;
